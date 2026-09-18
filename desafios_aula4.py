@@ -1,3 +1,4 @@
+import random
 # dic_compra_total = {}
 # valor_total = 0
 
@@ -45,8 +46,24 @@
 # else:
 #     print("País não encontrado.")
 
-valor = []
-while sum(valor) <= 100:
-    add = int(input("Digite um número: "))
-    valor.append(add)
-print(f"O valor total é: {sum(valor)} e os valores são: {valor}")
+# valor = []
+# while sum(valor) <= 100:
+#     add = int(input("Digite um número: "))
+#     valor.append(add)
+# print(f"O valor total é: {sum(valor)} e os valores são: {valor}")
+
+# Crie uma lista com 5 números usando a biblioteca random. 
+# Usando um while, percorra a lista (com a ajuda de len()) e imprima apenas os
+# números pares encontrados.
+
+lista = []
+for i in range(5):
+    lista.append(random.randint(1, 100))
+    
+i = 0
+while i < len(lista):
+    if lista[i] %2 == 0:
+        print(f"{lista[i]} é par!")
+    else:
+        print(f"{lista[i]} é ímpar!")
+    i += 1

@@ -123,4 +123,4 @@ while i < limite:
     else:
         resultado.append(i)
         
-print(resultado)
+print(", ".join(str(x) for x in resultado))
